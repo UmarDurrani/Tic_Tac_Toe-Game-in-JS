@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: rgb(119, 165, 132);
+        text-align: center;
+    }
+
+    .container {
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .game {
+        height: 60vmin;
+        width: 60vmin;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5vmin;
+
+    }
+
+    .box {
+        height: 18vmin;
+        width: 18vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        border: none;
+        box-shadow: 0 0 1rem rgb(0, 0, 0.2);
+        font-size: 8vmin;
+        color: #b0413e;
+        background-color: white;
+    }
+
+    #reset_btn {
+        padding: 0.6rem;
+        font-size: 1.3rem;
+        background-color: rgb(26, 25, 25);
+        border-radius: 1rem;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    #new_btn {
+        padding: 0.6rem;
+        font-size: 1.3rem;
+        background-color: rgb(26, 25, 25);
+        border-radius: 1rem;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    #msg {
+        color: white;
+        font-size: 5vmin;
+    }
+
+    .msg_containor {
+        height: 100vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .hide {
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="msg_containor hide">
+        <p id="msg">Winner</p>
+        <button id="new_btn">New Game</button>
+    </div>
+    <h1>Tic Tac Toe</h1>
+    <div class="container">
+
+        <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+
+    </div>
+    <button id="reset_btn">Reset Game</button>
+
+    <script src="tic_tac_toe_game.js">
+
+    </script>
+</body>
+
+</html>
